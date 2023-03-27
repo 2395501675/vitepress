@@ -42,7 +42,7 @@ module.exports = {
     },
   }
 }
-const path1 = path.join(__dirname, '../weekly');
+// const path1 = path.join(__dirname, '../weekly');
 function getFiles(filePath,parentFile) {
   let config = []
   fs.readdirSync(filePath).forEach(file => {
@@ -63,16 +63,6 @@ function getFiles(filePath,parentFile) {
   });
   return config
 }
-let res = getFiles(path1)
-console.log(11111,JSON.stringify(res))
-// fs.readdir(path1,(err,files) =>{
-//   console.log('files-----',files)
-//   files.forEach(file => {
-//     if (file.isDirectory()) {
-//       console.log('dir',file)
-//     } else {
-//       console.log('file---',file)
+// let res = getFiles(path1)
 
-//     }
-//   })
-// })
+
