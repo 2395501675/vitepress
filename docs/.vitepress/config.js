@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import fs from 'fs'
 import path from 'path'
+
 module.exports = {
   ignoreDeadLinks: true, 
   title: 'vitepress-test',
@@ -8,7 +9,9 @@ module.exports = {
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
-  head: [['meta', { name: 'theme-color', content: '#3c8772' }]],
+  head: [
+    ['meta', { name: 'theme-color', content: '#3c8772' }],
+    ['link', { rel: 'stylesheet', href: 'https://unpkg.com/element-plus@2.3.1/dist/index.css' }]],
   markdown: {
     headers: {
       level: [0, 0]
@@ -40,7 +43,17 @@ module.exports = {
       apiKey: '9bb35b7fbb4b3ae36bb0f2ac9af77b5e',
       indexName: 'ruanyf-weekly'
     },
-  }
+  },
+  plugins:[
+    {
+      name: 'element-plus',
+      // You can import any ElementUI component here
+      // For example, to import the ElButton component:
+      // component: 'ElButton',
+      // Or to import all components:
+      component: 'element-plus'
+    }
+  ]
 }
 // const path1 = path.join(__dirname, '../weekly');
 function getFiles(filePath,parentFile) {
