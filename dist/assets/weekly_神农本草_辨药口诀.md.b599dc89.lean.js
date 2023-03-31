@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as p,R as t}from"./chunks/framework.f0ec8c98.js";const b=JSON.parse('{"title":"野外识别药性口诀","description":"","frontmatter":{},"headers":[],"relativePath":"weekly/神农本草/辨药口诀.md","lastUpdated":null}'),o={name:"weekly/神农本草/辨药口诀.md"},l=t("",14),r=[l];function i(c,n,_,s,d,h){return e(),p("div",null,r)}const k=a(o,[["render",i]]);export{b as __pageData,k as default};
