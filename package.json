@@ -4,10 +4,8 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
-  "devDependencies": {
-    "vitepress": "^1.0.0-alpha.61"
-  },
   "dependencies": {
+    "vitepress": "^1.0.0-alpha.61",
     "@giscus/vue": "^2.2.8",
     "element-plus": "^2.3.1",
     "vite": "^4.2.1",
